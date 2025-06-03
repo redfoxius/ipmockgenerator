@@ -14,9 +14,9 @@ func main() {
 	start := time.Now()
 
 	// parse command line flags
-	maskPtr := flag.String("mask", "212.121.*.*", "IP mask for gen, a string. Default: '212.121.*.*'")
-	numPtr := flag.Int("num", 1000, "number of IPs in file, an int. Default: 10000")
-	outPtr := flag.String("out", "ip.txt", "output file name, a string. Default: ip.txt")
+	maskPtr := flag.String("mask", "212.121.*.*", "IP mask for gen, a string.")
+	numPtr := flag.Int("num", 1000, "number of IPs in file, an int.")
+	outPtr := flag.String("out", "ip.txt", "output file name, a string.")
 	flag.Parse()
 
 	log.Println("mask:", *maskPtr)
